@@ -14,5 +14,8 @@ Hey, World!
 
 > Blockquote Aespa
 
+
+[Lab Report 1](https://youreyessuck.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
 ---
 
