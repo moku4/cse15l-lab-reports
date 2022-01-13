@@ -7,7 +7,7 @@ Hello Everyone, my name is Uri and today I'll demo how we can all access and log
 
 The first step sommence our journey is to download [VSCode](https://code.visualstudio.com/) with the link provided. Please make sure to have a device that meets the requirements for installment. Depending on the device, slect the appropriate install option. In my case, I'll downloading the Windows version. Once installed, open VSCode. 
 
-
+![Image](VSCodeOpen.png)
 
 ## Remotely Connecting
 
@@ -23,6 +23,8 @@ $ ssh cs15lwi22abc@ieng6.ucsd.edu
 
 On the first attempt a message may show up saying, "`The authenticity of host...`" just type yes and press enter and enter your password. Congratulations, you are finlly conencted and your screen shoud look like this:
 
+![Image](SSHLogin.png)
+
 ## Trying Some Commands
 
 There are a lot of commands to play around with on the remote computer. Here are some commands that might be helpful in the future and what they do. 
@@ -35,6 +37,8 @@ There are a lot of commands to play around with on the remote computer. Here are
 * `cat` - Shows contents of a file.
 * `exit` - Logs out of account.
 
+![Image](BasicCommands.png)
+
 ## Moving Files with scp
 
 We can use `scp` to move files back and forth between computers. Make sure to be logged off of your account to proceed with the next steps. 
@@ -45,6 +49,8 @@ Create a java file on your computer. Make sure you can compile and run it with n
 $ scp WhereAmI.java cs15lwi22abc@ieng6.ucsd.edu:~/
 ```
 Enter your password when asked. You can log into your remote account and use `ls` to make sure your files are in your home directory. 
+
+![Image](SCPWhereAmI.png)
 
 ## Setting an SSH Key
 
@@ -59,6 +65,8 @@ $ (Empty for no passphrase twice)
 ```
 
 Your screen should look like this:
+
+![Image](SSHKey.png)
 
 If you're using windows make sure follow the `ssh-add` steps from this website to complete the step, [https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
 
@@ -83,3 +91,5 @@ $ ssh cs15lwi22@ieng6.ucsd.edu "ls"
 
 $ cp WhereAmI.java; javac WhereAmI.java; java WhereAmI
 ```
+
+![Image](Optimized.png)
